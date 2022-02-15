@@ -1,0 +1,30 @@
+.uper-space {
+  height: 1.2rem;
+  background-color: rgb(13, 191, 214);
+  width: 100%;
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  border-bottom: 0.08rem solid rgb(255, 255, 255);
+}
+.header {
+  font-family: "Italiana", serif;
+  font-size: 1.8rem;
+  padding: 0.5rem 0;
+}
+.logOutIcon {
+  cursor: pointer;
+  padding: 0.4rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.logOutIcon img {
+  width: 2rem;
+  height: 2rem;
+}
+h4 {
+  color: #fff;
+}

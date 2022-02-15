@@ -1,13 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(39, 39, 39);
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  opacity: 0;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(165, 165, 165);
+}
+h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+  color: whitesmoke;
+}
+h2 {
+  color: whitesmoke;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+h3 {
+  color: whitesmoke;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  color: whitesmoke;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+}
+
+.marginsix {
+  margin: 12px;
+}
+.main-iphone-body {
+  border: 0.01px solid rgba(0, 0, 0, 0.418);
+  display: grid;
+  justify-items: center;
+  width: 434px;
+  height: 886px;
+  border-radius: 2.8rem;
+  background: linear-gradient(
+    186.57deg,
+    #f4f4f4 7.42%,
+    #ffffff 16.09%,
+    #f4f4f4 21.34%,
+    #f4f4f4 74.16%,
+    #ffffff 83.66%,
+    #f4f4f4 91.85%
+  );
+}
+.main-iphone-outer-body {
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 444px;
+  height: 896px;
+  border-radius: 3rem;
+  background: linear-gradient(
+    183.21deg,
+    #ff0000 -6.07%,
+    #ff4b4b 7.37%,
+    #e60c0c 20.23%,
+    #ff2929 33.08%,
+    #ff0000 65.81%,
+    #e10000 79.84%,
+    #ff3232 89.05%,
+    #bf0000 106.14%
+  );
+}
+.iphone-screen {
+  position: relative;
+  overflow: auto;
+  width: 414px;
+  height: 736px;
+  background-color: rgb(20, 20, 20);
+}
+.iphone-upersection {
+  margin: 1.2rem;
+  width: 100%;
+  height: 60.5;
+  display: grid;
+  justify-items: center;
+}
+.iphone-upersection :nth-child(1) {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  align-self: center;
+  background-color: rgb(0, 0, 0);
+}
+.iphone-upersection :nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.iphone-upersection :nth-child(2) :first-child {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  align-self: center;
+  background-color: rgb(0, 0, 0);
+  margin-right: 18px;
+}
+.iphone-upersection :nth-child(2) :last-child {
+  width: 68px;
+  margin-right: 18px;
+  height: 4px;
+  border-radius: 4px;
+  align-self: center;
+  background-color: rgb(0, 0, 0);
+}
+.iphone-lowerBody {
+  width: 100%;
+  height: 60.5;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.iphone-lowerBody :nth-child(1) {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  align-self: center;
+  background-color: rgb(243, 243, 243);
+  border: 3px inset silver;
+  box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.295);
+}
+.btns-outer {
+  position: absolute;
+  width: 4px;
+  background: rgb(228, 0, 0);
+}
+.mute {
+  border-radius: 3px 0 0 3px;
+  left: -3px;
+  top: 78px;
+  height: 30px;
+}
+.volume-up {
+  border-radius: 3px 0 0 3px;
+  left: -3px;
+  top: 120px;
+  height: 54px;
+}
+.volume-down {
+  border-radius: 3px 0 0 3px;
+  left: -3px;
+  top: 178px;
+  height: 54px;
+}
+.powerbtn {
+  border-radius: 0 3px 3px 0;
+  right: -3px;
+  top: 138px;
+  height: 54px;
+}
+.sign-in-container {
+  width: 100%;
+}
+.logo-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 5rem;
+  display: grid;
+  justify-items: center;
+}
+.logo-container img {
+  width: 40%;
+}
+form {
+  display: grid;
+  width: 100%;
+  justify-items: center;
+  padding: 4rem 0;
+  gap: 1rem;
+}
+.form-element {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 0.1rem;
+  width: 100%;
+  position: relative;
+}
+.errorMessage {
+  position: absolute;
+  background: #000;
+  padding: 0.3rem 1rem;
+  width: 80%;
+  color: whitesmoke;
+  font-size: 0.8rem;
+  border-radius: 0.4rem;
+  font-weight: 400;
+}
+.errorMessage::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  transform: rotate(45deg);
+  right: 5px;
+  width: 1rem;
+  height: 1rem;
+  background: #000;
+}
+label {
+  width: 80%;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+}
+input {
+  width: 80%;
+  height: 3.2rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  padding-left: 0.6rem;
+}
+.form-btn {
+  margin-top: 1rem;
+  width: 80%;
+  justify-items: end;
+}
+button {
+  border-radius: 3rem;
+}
+.loader {
+  width: 100%;
+  height: 30rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.porfileUserFront {
+  display: flex;
+  align-items: center;
+}
+.porfileUser {
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0.4rem 0.3rem 0.3rem 0.3rem;
+  overflow: hidden;
+  margin-right: 1rem;
+  background: rgb(246, 246, 246);
+  border-radius: 50%;
+  object-fit: contain;
+}
+.emailText {
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+}
+.offsetNumber {
+  width: 3rem;
+  height: 1.8rem;
+  font-size: 1.2rem;
+}
+.c-w {
+  color: white;
+}
+.headings {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.calls {
+  width: 100%;
+  overflow: auto;
+  position: relative;
+}
+.container {
+  width: 100%;
+}
+.table-main {
+  display: grid;
+  gap: 0.4rem;
+}
+.tableRow {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem;
+}
+.tableSectionBtn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.tableSectionColumn {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.label {
+  text-transform: uppercase;
+}
+.popNotes {
+  position: fixed;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: scale3d(1, 1, 1) translate(-50%, -50%);
+  background: rgba(239, 255, 253, 0.472);
+  box-shadow: 0 2px 8px 0 rgba(2, 2, 2, 0.2);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  width: 50%;
+  height: auto;
+  transition: all 0.4s ease-in-out;
+  opacity: 1;
+}
+.popOff {
+  transform: scale3d(1, 0, 1) translate(-50%, -200%);
+  opacity: 0;
+}
+.popNotesConatiner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.popHeader {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+}
+.crossSign {
+  cursor: pointer;
+}
+.containerPop {
+  text-align: center;
+  margin: 4rem;
+}
+.containerPop h2 {
+  color: rgb(39, 39, 39);
+  margin-bottom: 3rem;
 }
