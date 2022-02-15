@@ -50,7 +50,7 @@ function CallLogs(props) {
                 {note.map((i) => {
                   return (
                     <div>
-                      <h2>{i.content}</h2>
+                      <h5>{i.content}</h5>
                     </div>
                   )
                 })}

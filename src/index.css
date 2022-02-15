@@ -322,7 +322,7 @@ button {
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(4.5px);
   border-radius: 10px;
-  width: 50%;
+  width: auto;
   height: auto;
   transition: all 0.4s ease-in-out;
   opacity: 1;
@@ -348,9 +348,9 @@ button {
 }
 .containerPop {
   text-align: center;
-  margin: 4rem;
+  margin: 2rem;
 }
 .containerPop h2 {
   color: rgb(39, 39, 39);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
